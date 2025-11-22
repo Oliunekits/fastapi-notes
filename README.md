@@ -56,7 +56,7 @@ fastapi-notes/
     .env                      # environment variables (optional)
     requirements.txt
 
-Installation and Run (local)
+## Installation and Run (local)
 
 Clone the repository
 
@@ -91,7 +91,7 @@ Notes endpoints: http://127.0.0.1:8000/api/notes/
 
 Database tables are created automatically on application startup.
 
-API Endpoints
+## API Endpoints
 
 Base prefix: /api/notes/
 
@@ -99,16 +99,16 @@ List notes
 GET /api/notes/
 
 
-Query parameters:
+## Query parameters:
 
 q – search in title or content (optional)
 
 tag – filter by tag substring (optional)
 
-Get note by id
+## Get note by id
 GET /api/notes/{note_id}
 
-Create note
+## Create note
 POST /api/notes/
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ Content-Type: application/json
   "tags": "study,python"
 }
 
-Update note
+## Update note
 PUT /api/notes/{note_id}
 Content-Type: application/json
 
@@ -128,7 +128,7 @@ Content-Type: application/json
   "tags": "updated,tag"
 }
 
-Delete note
+## Delete note
 DELETE /api/notes/{note_id}
 
 Author
